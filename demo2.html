@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>5-star rating demo 2</title>
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
+  <script type='text/javascript' src='jquery.rating.js'></script>
+  <link rel="stylesheet" type="text/css" href="jquery.rating.css">
+</head>
+<body>
+    <form action="" method="GET">
+        <label>Using with form:<br />
+            <span id="rating1" data-rating=""></span>
+            <input name="rating1" type="hidden" />
+        </label>
+        <input type="submit" value="Submit" />
+        <p>Just set rating value to hidden input<br /> (see GET-params after submit)</p>
+    </form>
+    <script type='text/javascript'>//<![CDATA[ 
+    // usage
+    $('#rating1').rating(
+        {'change': function(ratingValue){
+            $('input[name="rating1"]').val(ratingValue);
+        }}
+    );
+    
+    // emulate server side for demo
+    $('#rating1').attr('data-rating', parseInt(location.href.substring(location.href.length - 1)))
+    //]]></script>
+</body>
+</html>
