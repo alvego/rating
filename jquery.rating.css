@@ -1,0 +1,45 @@
+/*
+ * jQuery 5-star rating plugin
+ * Version 1.0
+ * https://github.com/alvego/rating
+ *
+ * 5-star rating styles
+ *
+ * Copyright (c) 2014 http://rating.themext.com
+ * Licensed under the MIT and GPL licenses.
+ */
+
+span[data-rating] {
+    display:inline-block;
+    position:relative;
+}
+
+span[data-rating]:before, span[data-rating]:after {
+    content:"★★★★★";
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+    overflow:hidden;
+    letter-spacing:10px;
+}
+
+span[data-rating]:after {
+    position:absolute;
+    right:0;
+}
+
+span[data-rating]:before {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+span[data-rating][data-enabled]:hover:before { color: yellow; }
+span[data-rating="5"]:after { width:0%; }
+span[data-rating="1"]:before, span[data-rating="4"]:after { width:20%; }
+span[data-rating="2"]:before, span[data-rating="3"]:after { width:40%; }
+span[data-rating="3"]:before, span[data-rating="2"]:after { width:60%; }
+span[data-rating="4"]:before, span[data-rating="1"]:after { width:80%; }
+span[data-rating="5"]:before { width:100%; }

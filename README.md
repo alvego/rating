@@ -1,7 +1,7 @@
 jQuery 5-star rating plugin
 ======
 
-HTML5 CSS3 jQuery rating (5 stars) Only one span in CSS. Without images. Not need js in read-only mode.
+HTML5 CSS3 jQuery rating (5 star) Only one span in HTML. Without images. Not need js in read-only mode.
 
 Using
 
@@ -16,3 +16,7 @@ Using
         }}
     );
 
+
+Copyright (c) 2014 http://rating.themext.com
+
+Licensed under the MIT and GPL licenses.
