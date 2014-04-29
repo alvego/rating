@@ -17,6 +17,6 @@ Using
     );
 
 
-Copyright (c) 2014 http://rating.themext.com
+Copyright (c) 2014 http://themext.com/rating
 
 Licensed under the MIT and GPL licenses.

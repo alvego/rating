@@ -5,7 +5,7 @@
  *
  * jQuery 5-star rating plugin (necessary for user interaction).
  *
- * Copyright (c) 2014 http://rating.themext.com
+ * Copyright (c) 2014 http://themext.com/rating
  * Licensed under the MIT and GPL licenses.
  */
 
